@@ -17,3 +17,15 @@
     padding: 30px 20px;
   }
 }
+
+.popup_type_confirm-delete .popup__content  {
+  min-height: auto;
+}
+
+.popup_type_change_avatar .popup__content {
+  min-height: auto;
+}
+
+.popup__input_avatar {
+ margin-top: 12px
+}

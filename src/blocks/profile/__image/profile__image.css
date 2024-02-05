@@ -1,5 +1,5 @@
 .profile__image {
-  width: 120px;
+  width: 120px; /**120px*/
   height: 120px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -8,6 +8,30 @@
   background-position: center;
   margin: 0 29px 0 0;
 }
+
+.profile__avatar-container {
+  position: relative;
+}
+
+.avatar__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px; 
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); 
+  opacity: 0; 
+  transition: opacity 0.6s; 
+  cursor: pointer; 
+}
+
+.profile__avatar-container:hover .avatar__overlay {
+  opacity: 1;
+}
+
 
 @media screen and (max-width: 740px) {
   .profile__image {
